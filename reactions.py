@@ -1,6 +1,7 @@
 from ingredients import RECIPES
 import random
 
+
 def get_reaction(ing1, ing2):
     key = (ing1, ing2)
     reverse_key = (ing2, ing1)
