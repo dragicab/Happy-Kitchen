@@ -143,7 +143,7 @@ def end_screen():
     if reaction_scores:
         max_score = len(reaction_scores) * 2
         total = sum(reaction_scores)
-        percentage = int((total / max_score) * 100)
+        percentage = max(0, int((total / max_score) * 100))
     else:
         percentage = 0
 
